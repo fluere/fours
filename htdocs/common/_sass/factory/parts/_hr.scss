@@ -1,0 +1,36 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Horizontal rule
+   ========================================================================== */
+
+%mod-hr-common {
+	margin: 30px 0;
+	padding: 0;
+	border: none;
+}
+
+
+/* Default
+   ========================================================================== */
+
+.mod-hr {
+	@extend %mod-hr-common;
+	border-top: 1px solid #ddd;
+}
+
+
+/* Dotted
+   ========================================================================== */
+.mod-hr--dotted {
+	@extend %mod-hr-common;
+	border-top: 1px dotted #ddd;
+}
+
+
+/* Dashed
+   ========================================================================== */
+.mod-hr--dashed {
+	@extend %mod-hr-common;
+	border-top: 1px dashed #ddd;
+}

@@ -1,0 +1,38 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Definition list
+   ========================================================================== */
+
+%mod-dl-common {
+	@include space;
+
+	> dt {
+		font-weight: bold;
+	}
+}
+
+/* Default
+   ========================================================================== */
+
+.mod-dl {
+	@extend %mod-dl-common;
+}
+
+
+/* Horizontal
+   ========================================================================== */
+
+.mod-dl--horizontal {
+	@extend %mod-dl-common;
+	@include rect;
+
+	> dt {
+		float: left;
+		clear: left;
+	}
+
+	> dd {
+		@include rect;
+	}
+}

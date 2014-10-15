@@ -1,0 +1,23 @@
+{
+  "browser": true,
+  "curly": true,
+  "devel": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "evil": true,
+  "immed": true,
+  "latedef": true,
+  "laxcomma": true,
+  "newcap": true,
+  "noarg": true,
+  "shadow": true,
+  "sub": true,
+  "trailing": true,
+  "undef": true,
+  "globals": {
+    "jQuery": true,
+    "$": true,
+    "_": true,
+    "Backbone": true
+  }
+}

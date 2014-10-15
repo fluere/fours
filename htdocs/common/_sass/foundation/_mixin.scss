@@ -1,0 +1,114 @@
+@import "foundation/_variable";
+
+/* ==========================================================================
+   Mixin
+   ========================================================================== */
+
+/* Clearfix
+   ========================================================================== */
+
+@mixin clearfix {
+	zoom: 1;
+
+  &::before, &::after {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin rect {
+  overflow: hidden;
+  zoom: 1;
+}
+
+
+/* Space
+   ========================================================================== */
+
+@mixin firstSpaceNone($_important: false) {
+  &:first-child {
+    @if $_important == true {
+      margin-top: 0 !important;
+    } @else {
+      margin-top: 0;
+    }
+  }
+}
+
+@mixin space($_type: 'medium') {
+  @if $_type == 'none' {
+    margin-top: 0;
+  } @else if $_type == 'section' {
+    margin-top: $sectionSpace;
+  } @else if $_type == 'section-far' {
+    margin-top: $sectionFarSpace;
+  } @else if $_type == 'section-near' {
+    margin-top: $sectionNearSpace;
+  } @else if $_type == 'medium' {
+    margin-top: $moduleSpace;
+  } @else if $_type == 'far' {
+    margin-top: $moduleFarSpace;
+  } @else if $_type == 'near' {
+    margin-top: $moduleNearSpace;
+  } @else {
+    margin-top: $moduleSpace;
+  }
+
+  @if $_type != 'none' {
+    @include firstSpaceNone;
+  }
+}
+
+
+/* Image replace
+   ========================================================================== */
+
+@mixin imageReplace {
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+
+/* Inline block
+   ========================================================================== */
+
+@mixin inlineBlock($_valign: top) {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: $_valign;
+}
+
+
+/* Word break
+   ========================================================================== */
+
+@mixin wordBreak {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+
+/* Centered image
+   ========================================================================== */
+
+@mixin centeredImage($_width, $_height) {
+  display: table-cell;
+  width: $_width;
+  height: $_height;
+  text-align: center;
+  vertical-align: middle;
+  layout-grid-line: $_height;
+
+  > img {
+    width: auto;
+    max-width: $_width;
+    height: auto;
+    max-height: $_height;
+  }
+}

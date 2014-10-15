@@ -1,0 +1,29 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Icon
+   ========================================================================== */
+
+%mod-icon-common {
+	@include inlineBlock(middle);
+	position: relative;
+	width: 12px;
+	height: 12px;
+	margin-left: .5rem;
+}
+
+
+/* Blank
+   ========================================================================== */
+
+.mod-icon--blank {
+	@extend %mod-icon-common;
+}
+
+
+/* PDF
+   ========================================================================== */
+
+.mod-icon--pdf {
+	@extend %mod-icon-common;
+}

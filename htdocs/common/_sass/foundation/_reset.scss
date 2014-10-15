@@ -1,0 +1,326 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/* Initialize
+   ========================================================================== */
+
+/* The root element */
+html,
+/* Sections */
+body, article, section, nav, aside,
+h1, h2, h3, h4, h5, h6, header, footer, address,
+/* Grouping content */
+p, pre, blockquote, ol, ul, li, dl, dt, dd,
+figure, figcaption, div, main,
+/* Text-level semantics */
+a, em, strong, small, s, cite, q, dfn, abbr, data, time,
+code, var, samp, kbd, sub, sup, i, b, u, mark, span,
+/* Edits */
+ins, del,
+/* Embedded content */
+img, iframe, embed, object, video, audio,
+/* Tabular data */
+table, caption, tbody, thead, tfoot, tr, td, th,
+/* Forms */
+form, label, fieldset, legend,
+/* Scripting */
+canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+/* Box model
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* Display
+   ========================================================================== */
+
+article, section, nav, aside, header, footer,
+figure, figcaption, main {
+  display: block;
+}
+
+video, audio,
+progress,
+canvas {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+template,
+[hidden] {
+  display: none;
+}
+
+
+/* View
+   ========================================================================== */
+
+/*html*/.win,
+/*html*/.mac {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #fff;
+}
+
+
+/* Fonts
+   ========================================================================== */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', 'MS PGothic', sans-serif;
+
+  /*html*/.win & {
+    font-family: 'Meiryo', 'MS PGothic', sans-serif;
+  }
+}
+
+
+/* Style
+   ========================================================================== */
+
+/* Sections
+   -------------------------------------------------------------------------- */
+
+address {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Grouping content
+   -------------------------------------------------------------------------- */
+
+blockquote {
+  quotes: none;
+
+  &::before, &::after {
+    content: '';
+    content: none;
+  }
+}
+
+/* Grouping content
+   -------------------------------------------------------------------------- */
+
+hr {
+  height: 0;
+  box-sizing: content-box;
+}
+
+pre {
+  overflow: auto;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* Text-level semantics
+   -------------------------------------------------------------------------- */
+
+a {
+  background-color: transparent;
+
+  &:hover, &:active {
+    outline: 0;
+  }
+}
+
+em, strong, b {
+  font-style: normal;
+  font-weight: bold;
+}
+
+small {
+  font-size: 1em;
+}
+
+q {
+  quotes: none;
+
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+dfn {
+  font-style: italic;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+code, kbd, pre, samp {
+  font-size: 1em;
+  font-family: monospace, monospace;
+}
+
+sub, sup {
+  position: relative;
+  line-height: 0;
+  font-size: 1rem;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+mark {
+  background-color: inherit;
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Embedded content
+   -------------------------------------------------------------------------- */
+
+img {
+  border: 0;
+  vertical-align: top;
+  -ms-interpolation-mode: bicubic;
+}
+
+iframe, embed, object {
+  max-width: 100%;
+  outline: none;
+  vertical-align: top;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data
+   -------------------------------------------------------------------------- */
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+th, td {
+  vertical-align: top;
+}
+
+/* Forms
+   -------------------------------------------------------------------------- */
+
+label {
+  user-select: none;
+}
+
+input, button, select, optgroup, textarea {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+
+input {
+  line-height: normal;
+
+  &[type='search'] {
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+  }
+
+  &[type='search']::-webkit-search-cancel-button,
+  &[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  &[type='number']::-webkit-inner-spin-button,
+  &[type='number']::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+  &[type='checkbox'],
+  &[type='radio'] {
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  &[type='image'] {
+    vertical-align: top;
+    cursor: pointer;
+  }
+}
+
+html input[type='button'],
+input[type='reset'],
+input[type='submit'],
+button {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+html input[disabled],
+button[disabled] {
+  cursor: default;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+textarea {
+  overflow: auto;
+  margin: 0;
+  vertical-align: top;
+  resize: vertical;
+}

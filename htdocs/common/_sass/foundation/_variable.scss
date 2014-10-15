@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Variable
+   ========================================================================== */
+
+/* Width
+   ========================================================================== */
+
+$containerWidth:    960px;
+$mainContentWidth:  740px;
+$subContentWidth:   200px;
+
+
+/* Space
+   ========================================================================== */
+
+$sectionSpace:      40px;
+$sectionFarSpace:   50px;
+$sectionNearSpace:  30px;
+$moduleSpace:       12px;
+$moduleFarSpace:    20px;
+$moduleNearSpace:   7px;
+
+
+/* Color
+   ========================================================================== */
+
+$baseColor:         #333;
+$thinColor:         #999;
+$strongColor:       #e50;
+$errorColor:        #f00;
+$linkColor:         #4db4e4;
+$visitedColor:      #ba96c4;
+$hoverColor:        darken($linkColor, 25%);
+$visitedHoverColor: darken($visitedColor, 25%);
+
+
+/* Text
+   ========================================================================== */
+
+$defaultFontSize:   1.2rem;
+$defaultLineHeight: 1.5;
+
+
+/* Media query
+   ========================================================================== */
+
+$sizePC:            "screen and (min-width: 769px)";
+$sizeTablet:        "screen and (min-width: 481px) and (max-width: 768px)";
+$sizeSP:            "screen and (max-width: 480px)";

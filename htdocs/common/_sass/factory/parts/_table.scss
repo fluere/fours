@@ -1,0 +1,23 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Table
+   ========================================================================== */
+
+.mod-table {
+	@include space;
+	width: 100%;
+	table-layout: fixed;
+
+	th,
+	td {
+		@include wordBreak;
+		padding: 10px;
+		border: 1px solid  #eee;
+		line-height: 1.3;
+		vertical-align: middle;
+	}
+
+	thead th {
+	}
+}

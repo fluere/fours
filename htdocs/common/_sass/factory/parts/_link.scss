@@ -1,0 +1,48 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Link
+   ========================================================================== */
+
+%mod-link-common {
+  line-height: 1.3;
+}
+
+
+/* Default
+   ========================================================================== */
+
+.mod-link {
+	@extend %mod-link-common;
+}
+
+
+/* List
+   ========================================================================== */
+
+.mod-link-list {
+	@include space;
+
+	> li {
+		@extend %mod-link-common;
+	}
+}
+
+
+/* Horizontal list
+   ========================================================================== */
+
+.mod-link-list--horizontal {
+	@include space;
+	@include rect;
+
+	> li {
+		@extend %mod-link-common;
+		@include inlineBlock;
+		margin-left: 20px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

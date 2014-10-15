@@ -1,0 +1,43 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Font
+   ========================================================================== */
+
+/* Font size
+   ========================================================================== */
+
+.size-xxsmall  { font-size: $defaultFontSize - 0.6rem !important; }
+.size-xsmall   { font-size: $defaultFontSize - 0.4rem !important; }
+.size-small    { font-size: $defaultFontSize - 0.2rem !important; }
+.size-medium   { font-size: $defaultFontSize          !important; }
+.size-large    { font-size: $defaultFontSize + 0.2rem !important; }
+.size-xlarge   { font-size: $defaultFontSize + 0.4rem !important; }
+.size-xxlarge  { font-size: $defaultFontSize + 0.6rem !important; }
+
+
+/* Font weight
+   ========================================================================== */
+.weight-normal { font-weight: normal !important; }
+.weight-bold   { font-weight: bold   !important; }
+
+
+/* Font style
+   ========================================================================== */
+.style-normal  { font-style: normal !important; }
+.style-italic  { font-style: italic !important; }
+
+
+/* Font color
+   ========================================================================== */
+.color-normal { color: $baseColor !important; }
+.color-strong { color: $strongColor !important; }
+.color-thin   { color: $thinColor !important; }
+
+
+/* Text decoration
+   ========================================================================== */
+.decoration-none      { text-decoration: none         !important; }
+.decoration-underline { text-decoration: underline    !important; }
+.decoration-overline  { text-decoration: overline     !important; }
+.decoration-strike    { text-decoration: line-through !important; }

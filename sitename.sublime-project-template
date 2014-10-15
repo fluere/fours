@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "follow_symlinks": true,
+      "path": "/Users/*****/Projects/example.com/",
+      "name": "docroot"
+    },
+    {
+      "follow_symlinks": true,
+      "path": "/Users/*****/Projects/example.com/htdocs",
+      "name": "webroot"
+    }
+  ],
+  "settings": {
+    "afn_use_project_root": true,
+    "afn_proj_root": "/Users/*****/Projects/example.com/htdocs"
+  }
+}

@@ -1,0 +1,56 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Table cell
+   ========================================================================== */
+
+/* Weight
+   ========================================================================== */
+
+/*table,thead,tbody*/.th-weight-bold th,
+/*table,thead,tbody*/.td-weight-bold td {
+	font-weight: bold;
+}
+
+/*table,thead,tbody*/.th-weight-normal th,
+/*table,thead,tbody*/.td-weight-normal td {
+	font-weight: normal;
+}
+
+
+/* Horizontal align
+   ========================================================================== */
+
+/*table,thead,tbody*/.th-align-left th,
+/*table,thead,tbody*/.td-align-left td {
+	text-align: left;
+}
+
+/*table,thead,tbody*/.th-align-center th,
+/*table,thead,tbody*/.td-align-center td {
+	text-align: center;
+}
+
+/*table,thead,tbody*/.th-align-right th,
+/*table,thead,tbody*/.td-align-right td {
+	text-align: right;
+}
+
+
+/* Vertical align
+   ========================================================================== */
+
+/*table,thead,tbody*/.th-align-top th,
+/*table,thead,tbody*/.td-align-top td {
+	vertical-align: top;
+}
+
+/*table,thead,tbody*/.th-align-middle th,
+/*table,thead,tbody*/.td-align-middle td {
+	vertical-align: middle;
+}
+
+/*table,thead,tbody*/.th-align-bottom th,
+/*table,thead,tbody*/.td-align-bottom td {
+	vertical-align: bottom;
+}

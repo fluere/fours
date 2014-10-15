@@ -1,0 +1,21 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Align
+   ========================================================================== */
+
+/* Horizontal align
+   ========================================================================== */
+
+.align-left     { text-align: left !important; }
+.align-center   { text-align: center !important; }
+.align-right    { text-align: right !important; }
+
+
+/* Vertical align
+   ========================================================================== */
+
+.align-top      { vertical-align: top !important; }
+.align-middle   { vertical-align: middle !important; }
+.align-bottom   { vertical-align: bottom !important; }
+.align-baseline { vertical-align: baseline !important; }

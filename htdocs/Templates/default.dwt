@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js" prefix="og: http://ogp.me/ns#">
+<head>
+  <!--TemplateBeginIf cond="0" --><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!--TemplateEndIf --><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+<!-- TemplateBeginEditable name="pageInfo" -->
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+<!-- TemplateEndEditable -->
+  <link rel="stylesheet" href="/common/css/all.min.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+  <!--[if lt IE 9]><script src="/common/js/vendor/polyfill.js"></script><![endif]-->
+<!-- TemplateParam name="category" type="text" value="" -->
+<!-- TemplateParam name="showAside" type="boolean" value="true" -->
+<!-- TemplateParam name="showBreadcrumbs" type="boolean" value="true" -->
+@@(''/*
+
+# About this DWT.
+
+## Template parameter
+
+| Name            | Type    | Description                   |
+|-----------------|---------|-------------------------------|
+| category        | text    | Category name                 |
+| showAside       | boolean | Display the sub content (t/f) |
+| showBreadcrumbs | boolean | Display the breadcrumbs (t/f) |
+
+## Editable regions
+
+| Name            | Description             |
+|-----------------|-------------------------|
+| pageInfo        | Documents title, meta   |
+| head            | Additional style sheets |
+| breadcrumbs     | Breadcrumbs             |
+| mainContent     | Main content            |
+| script          | Additional scripts      |
+
+*/)@@
+</head>
+<body @@(!showAside?' class="is-single-column"':'')@@ id="page-top">
+<div class="page-container">
+  <header role="banner" class="page-header" id="page-header">
+    <h1 class="header-page-id"><img src="" alt="" width="" height=""></h1>
+    <nav class="header-global-nav">
+      <ul>
+        <li class="header-global-nav__item item--foo"><a href="#">foo</a></li>
+        <li class="header-global-nav__item item--bar"><a href="#">bar</a></li>
+        <li class="header-global-nav__item item--baz"><a href="#">baz</a></li>
+        <li class="header-global-nav__item item--qux"><a href="#">qux</a></li>
+      </ul>
+    </nav>
+  <!-- /.page-header -->
+  </header>
+
+<!-- TemplateBeginIf cond="showBreadcrumbs" -->
+  <nav class="breadcrumbs">
+    <p>
+      <a href="/">Home</a> <span class="breadcrumbs__arrow">&rsaquo;</span> <!-- TemplateBeginEditable name="breadcrumbs" --><!--
+      --><a href="#">Parent page</a> <span class="breadcrumbs__arrow">&rsaquo;</span> <!--
+      --><a class="current">Current page</a>
+<!-- TemplateEndEditable -->
+    </p>
+  <!-- /.breadcrumbs -->
+  </nav>
+<!-- TemplateEndIf -->
+
+  <div class="page-content" id="page-content">
+    <main role="main" class="page-content-main" id="page-content-main">
+<!-- TemplateBeginEditable name="mainContent" -->
+      <h1 class="mod-h1"><span>Page title</span></h1>
+
+      <section>
+        <p>Edit here.</p>
+      </section>
+<!-- TemplateEndEditable -->
+    <!-- /.page-content-main -->
+    </main>
+
+    <aside class="page-content-sub" id="page-content-sub">
+<!-- TemplateBeginIf cond="category==='foo'" -->
+      <nav class="sub-local-nav">
+        <h1 class="sub-local-nav__title"></h1>
+        <ul class="sub-local-nav__list--level1">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li>
+            <a href="#"></a>
+            <ul class="sub-local-nav__list--level2">
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sub-banner-list">
+        <ul>
+          <li><a href="#" target="_blank"><img src="" alt="" width="" height=""></a></li>
+        </ul>
+      </div>
+<!-- TemplateEndIf -->
+    <!-- /.page-content-sub -->
+    </aside>
+  <!-- /.page-content -->
+  </div>
+
+  <footer role="contentinfo" class="page-footer" id="page-footer">
+    <p class="footer-return-top"><a href="#page-top">Return to page top</a></p>
+    <ul class="footer-sub-nav">
+      <li><a href="#">foo</a></li>
+      <li><a href="#">bar</a></li>
+      <li><a href="#">baz</a></li>
+      <li><a href="#">qux</a></li>
+    </ul>
+    <p class="footer-copyright"><small>copyright&copy; All rights reserved.</small></p>
+  <!-- /.page-footer -->
+  </footer>
+<!-- /.page-container -->
+</div>
+
+<script src="/common/js/vendor/libs.js"></script>
+<script src="/common/js/all.min.js"></script>
+<!-- TemplateBeginEditable name="script" -->
+<!-- TemplateEndEditable -->
+</body>
+</html>

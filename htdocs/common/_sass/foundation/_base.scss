@@ -1,0 +1,64 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* Clearfix
+   ========================================================================== */
+
+article, section, nav, aside,
+header, footer,
+main {
+	@include clearfix;
+}
+
+
+/* Setting
+   ========================================================================== */
+
+body {
+	background-color: #fff;
+	color: $baseColor;
+	line-height: $defaultLineHeight;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, pre, li, dt, dd, figcaption,
+caption, col, th, td {
+	font-size: $defaultFontSize;
+}
+
+
+/* Section
+   ========================================================================== */
+
+section {
+	@include space(section);
+
+  section {
+    @include space(section-near);
+  }
+}
+
+
+/* Link
+   ========================================================================== */
+
+a {
+  color: $linkColor;
+
+  &:visited {
+    color: $visitedColor;
+  }
+
+  &:hover,
+  &:active {
+    color: $hoverColor;
+  }
+
+  &:visited:hover,
+  &:visited:active {
+    color: $visitedHoverColor;
+  }
+}

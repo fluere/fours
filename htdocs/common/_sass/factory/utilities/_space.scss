@@ -1,0 +1,13 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Space
+   ========================================================================== */
+
+.space-normal       { @include space; }
+.space-far          { @include space(far); }
+.space-near         { @include space(near); }
+.space-section      { @include space(section); }
+.space-section-far  { @include space(section-far); }
+.space-section-near { @include space(section-near); }
+.space-none         { @include space(none); }

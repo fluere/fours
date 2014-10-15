@@ -1,0 +1,13 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Alpha rollover
+   ========================================================================== */
+.alpha-rollover {
+  opacity: 1;
+  background: url(../img/px.png) no-repeat;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

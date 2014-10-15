@@ -1,0 +1,40 @@
+@import "foundation/_variable", "foundation/_mixin";
+
+/* ==========================================================================
+   Media
+   ========================================================================== */
+
+.mod-media {
+  @include space(far);
+  @include rect;
+}
+
+.mod-media__object {
+  display: table;
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+
+  &.object--far {
+    margin-right: 20px;
+  }
+
+  &.object--rev {
+    float: right;
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  &.object--far.object--rev {
+    margin-left: 20px;
+  }
+}
+
+.mod-media__caption {
+  display: block;
+  text-align: left;
+}
+
+.mod-media__body {
+  @include rect;
+}
